@@ -1,0 +1,9 @@
+CREATE DATABASE ClothingStore
+USE ClothingStore
+
+CREATE TABLE Brands
+(
+	Id INT PRIMARY KEY IDENTITY,
+	Name NVARCHAR(50),
+	Year INT CHECK(Year>0)
+)
